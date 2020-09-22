@@ -1,0 +1,40 @@
+{
+  "name": "testing_practice_js",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "jest": "^26.4.2"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.11.5",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.8.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "watch": "webpack --watch",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nurislam-ab/testing_practice_js.git"
+  },
+  "keywords": [
+    "jest",
+    "testing"
+  ],
+  "author": "Nurislam Ab",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nurislam-ab/testing_practice_js/issues"
+  },
+  "homepage": "https://github.com/nurislam-ab/testing_practice_js#readme"
+}
