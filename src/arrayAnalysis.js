@@ -4,36 +4,30 @@ const ArrayAnalysis = (() => {
 
     arr.forEach((n) => {
       sum += n;
-    })
+    });
 
     const average = sum / arr.length;
     return average;
-  }
+  };
 
-  const arrLength = (arr) => {
-    return arr.length;
-  }
+  const arrLength = (arr) => arr.length;
 
-  const arrMaxVal = (arr) => {
-    return Math.max(...arr);
-  }
+  const arrMaxVal = (arr) => Math.max(...arr);
 
-  const arrMinVal = (arr) => {
-    return Math.min(...arr);
-  }
+  const arrMinVal = (arr) => Math.min(...arr);
 
   const arrAnalysis = (arr) => {
     const obj = {
       arrAverage: average(arr),
       arrLength: arrLength(arr),
       arrMax: arrMaxVal(arr),
-      arrMin: arrMinVal(arr)
-    }
+      arrMin: arrMinVal(arr),
+    };
     return obj;
-  }
-  
+  };
+
   return {
-    arrAnalysis
+    arrAnalysis,
   };
 })();
 

@@ -20,7 +20,7 @@ const CaesarCipher = (() => {
     const asciiVals = getAsciiCode(msg);
     for (let i = 0; i < msg.length; i += 1) {
       let dif = 0;
-      if (asciiVals[i] >= 97 || asciiVals <= 123) {
+      if (asciiVals[i] >= 97 || asciiVals <= 122) {
         if ((asciiVals[i] + key) > 122) {
           dif = asciiVals[i] + key - 122;
           asciiVals[i] = 96 + dif;
@@ -41,7 +41,7 @@ const CaesarCipher = (() => {
   };
 
   return {
-    encrypt
+    encrypt,
   };
 })();
 

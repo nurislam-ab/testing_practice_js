@@ -15,8 +15,8 @@ const StringOperations = (() => {
 
   return {
     capitalize,
-    reverseString
-  }
+    reverseString,
+  };
 })();
 
 export default StringOperations;
