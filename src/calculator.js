@@ -15,4 +15,12 @@ const Calculator = (() => {
     return a * b;
   };
 
+  return {
+    add,
+    subtract,
+    divide,
+    multiply
+  }
 })();
+
+export default Calculator;
