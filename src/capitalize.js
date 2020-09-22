@@ -6,8 +6,16 @@ const StringOperations = (() => {
     return result;
   };
 
+  const reverseString = (str) => {
+    const splitStr = str.split('');
+    const reveresedStr = splitStr.reverse();
+    const result = reveresedStr.join('');
+    return result;
+  };
+
   return {
     capitalize,
+    reverseString
   }
 })();
 
